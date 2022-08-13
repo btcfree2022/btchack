@@ -1,0 +1,340 @@
+body.payment-page-body {
+    background: #edf3f1;
+    font-size: 12px;
+    font-family: 'Open Sans',sans-serif;
+    min-width: 300px;
+    color: #363837
+}
+
+.payment-page-body .same-col-height {
+    display: table;
+    width: 100%
+}
+
+    .payment-page-body .same-col-height [class*=col-] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 230px;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+.payment-page-body .order-id-corner {
+    font-size: 18px;
+    font-weight: 300
+}
+
+.border-top {
+    border-top: 1px solid #dee3e1
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee3e1
+}
+
+.border-left {
+    border-left: 1px solid #dee3e1
+}
+
+.border-right {
+    border-right: 1px solid #dee3e1
+}
+
+.color-orange {
+    color: #e6985a
+}
+
+.color-green {
+    color: #204d6a
+}
+
+.color-gray {
+    color: #333;
+    font-size: 13px
+}
+
+.bg-gray {
+    background: #fcfdfd
+}
+
+.bg-orange {
+    background: #e6985a
+}
+
+.no-padding-top [class*=col-] {
+    padding-top: 0 !important
+}
+
+.padding-l-10 {
+    padding-left: 10px !important
+}
+
+.padding-l-15 {
+    padding-left: 15px !important
+}
+
+.padding-l-20 {
+    padding-left: 20px !important
+}
+
+.padding-r-10 {
+    padding-right: 10px !important
+}
+
+.padding-r-15 {
+    padding-right: 15px !important
+}
+
+.padding-r-20 {
+    padding-right: 20px !important
+}
+
+.padding-b-10 {
+    padding-bottom: 10px !important
+}
+
+.padding-b-15 {
+    padding-bottom: 15px !important
+}
+
+.padding-b-20 {
+    padding-bottom: 20px !important
+}
+
+.progress.small {
+    height: 3px
+}
+
+.progress.green {
+    background: #204d6a;
+    margin-bottom: 10px
+}
+
+    .progress.green .progress-bar-success {
+        background: #dee3e1;
+        box-shadow: none;
+        position: relative
+    }
+
+    .progress.green .time {
+        position: absolute;
+        top: -12px;
+        display: block;
+        font-size: 13px
+    }
+
+    .progress.green .received {
+        position: absolute;
+        top: -12px;
+        right: 0;
+        font-size: 13px;
+        display: none
+    }
+
+        .progress.green .received .fa {
+            color: #525855
+        }
+
+.btn {
+    font-size: 12px !important;
+    text-align: center;
+    padding: 15px 0;
+    padding-color: #fefefe;
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.btn-orange {
+    background-color: #f8b032;
+    border-color: #f8b032;
+    text-shadow: 1px 1px #c07f4b
+}
+
+    .btn-orange.active, .btn-orange:active, .btn-orange:focus, .btn-orange:hover, .open .dropdown-toggle.btn-orange {
+        color: #fff;
+        background-color: #fbcd7c
+    }
+
+.btn-green {
+    background-color: #204d6a !important;
+    text-shadow: 1px 1px #266f9e !important
+}
+
+    .btn-green.active, .btn-green:active, .btn-green:focus, .btn-green:hover, .open .dropdown-toggle.btn-green {
+        color: #fff;
+        background-color: #3278a5 !important
+    }
+
+.simple-nav {
+    margin: 0;
+    padding: 0
+}
+
+    .simple-nav li {
+        list-style: none;
+        float: left
+    }
+
+        .simple-nav li:first-child {
+            margin-left: 0
+        }
+
+            .simple-nav li:first-child:before {
+                content: none
+            }
+
+        .simple-nav li:before {
+            content: "|";
+            margin-right: 5px;
+            margin-left: 5px
+        }
+
+        .simple-nav li a {
+            color: #333;
+            font-size: 12px
+        }
+
+#payment-page-area {
+    background: #fff;
+    border: 1px solid #dee3e1;
+    border-radius: 3px;
+    padding: 20px;
+    max-width: 460px;
+    margin: auto;
+    margin-top: 1%
+}
+
+    #payment-page-area .title {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0
+    }
+
+    #payment-page-area .row {
+        margin: 0
+    }
+
+    #payment-page-area [class*=col-] {
+        padding: 8px 0 8px 0
+    }
+
+    #payment-page-area .btn {
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px !important
+    }
+
+    #payment-page-area .barcode {
+        margin-bottom: 10px
+    }
+
+    #payment-page-area .message {
+        margin: 10px 0
+    }
+
+        #payment-page-area .message.status-success {
+            color: #5fa282
+        }
+
+            #payment-page-area .message.status-success a {
+                color: #5fa282;
+                text-decoration: underline
+            }
+
+        #payment-page-area .message.status-error {
+            color: #e94545
+        }
+
+            #payment-page-area .message.status-error a {
+                color: #e94545;
+                text-decoration: underline
+            }
+
+        #payment-page-area .message .title {
+            font-size: 23px;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+
+        #payment-page-area .message .description {
+            font-size: 14px
+        }
+
+    #payment-page-area .btc-sum {
+        font-size: 14px
+    }
+
+.currencyExchangeList {
+    line-height: 2em;
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow: auto
+}
+
+    .currencyExchangeList li {
+        display: list-item;
+        width: 100%;
+        height: 2em;
+        font-size: 12px;
+        text-indent: 15px;
+        cursor: pointer;
+        background-color: #fff
+    }
+
+        .currencyExchangeList li:before {
+            content: "\2248"
+        }
+
+        .currencyExchangeList li.unselected {
+            display: none
+        }
+
+    .currencyExchangeList.active {
+        border: 1px solid #dee3e1
+    }
+
+        .currencyExchangeList.active li {
+            display: list-item
+        }
+
+            .currencyExchangeList.active li:hover {
+                background-color: #f8b032
+            }
+
+#orderId_field input[type=text] {
+    border: 1px solid #ebebeb;
+    border-padding: 0 15px;
+    border-position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    height: 43px;
+    border-radius: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+}
+
+.register-form .alert-notice {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ebccd1;
+    background-color: #f2dede;
+    color: #a94442;
+    font-size: 16px;
+    font-weight: 600
+}
+
+    .register-form .alert-notice ul {
+        padding: 0;
+        margin: 0
+    }
+
+.input-group label {
+    display: none !important
+}
+
+.input-group input {
+    text-align: left !important
+}
